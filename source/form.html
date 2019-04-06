@@ -27,6 +27,80 @@
 
     <main class="page-main">
 
+      <h1>Подбор программы</h1>
+
+      <form class="form-nutrition" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form-nutrition__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <fieldset class="form-nutrition__main-info client-info">
+          <legend>Основные данные</legend>
+          <p class="client-info__characteristic">
+            <label class="client-info__name" for="client-name">Имя:*</label>
+            <input class="client-info__value" id="client-name" name="client-name" type="text" placeholder="Барсик">
+          </p>
+          <p class="client-info__characteristic">
+            <label class="client-info__name" for="client-weight">Вес (кг):*</label>
+            <input class="client-info__value" id="client-weight" name="client-weight" type="text" placeholder="7">
+          </p>
+          <p class="client-info__characteristic">
+            <label class="client-info__name" for="client-age">Возраст (лет):</label>
+            <input class="client-info__value" id="client-age" name="client-age" type="text" placeholder="7">
+          </p>
+        </fieldset>
+        <fieldset class="form-nutrition__program-select program-select">
+          <legend>Выбор программы питания</legend>
+            <p class="program-select__option">
+              <input type="radio" name="program-mode" id="weight-loss" value="weight-loss">
+              <label for="weight-loss">Похудение</label>
+            </p>
+            <p class="program-select__option">
+              <input type="radio" name="program-mode" id="weight-gain" value="weight-gain">
+              <label for="weight-gain">Набор массы</label>
+            </p>
+            <p class="program-select__option">
+              <input type="radio" name="program-mode" id="other" value="other">
+              <label for="other">Не знаю (Нужен ваш совет)</label>
+            </p>
+        </fieldset>
+        <fieldset class="form-nutrition__client-contacts client-contacts">
+          <legend>Контактные данные (владельца кота)</legend>
+          <p class="client-contacts__characteristic">
+            <label class="client-contacts__name" for="client-email">E-mail:*</label>
+            <input class="client-contacts__value" id="client-email" name="client-email" type="text" placeholder="kuklachev@gmail.com">
+          </p>
+          <p class="client-contacts__characteristic">
+            <label class="client-contacts__name" for="client-phone">Телефон:*</label>
+            <input class="client-contacts__value" id="client-phone" name="client-phone" type="text" placeholder="8 (960) 900-60-90">
+          </p>
+        </fieldset>
+        <fieldset class="form-nutrition__client-comment client-comment">
+          <legend>Комментарий</legend>
+          <label class="client-comment__name visually-hidden" for="client-comment__value">Комментарий:</label>
+            <textarea class="client-comment__value" id="client-comment__value" name="client-comment" rows="4">Расскажите обо всех повадках кота</textarea>
+          </p>
+        </fieldset>
+        <fieldset class="form-nutrition__program-extra program-extra">
+          <legend>Дополнительно</legend>
+            <p class="program-extra__option">
+              <input type="checkbox" name="sugar-replacement" id="sugar-replacement" checked>
+              <label for="sugar-replacement">Сахарозаменитель</label>
+            </p>
+            <p class="program-extra__option">
+              <input type="checkbox" name="water" id="water">
+              <label for="water">Питьевая вода</label>
+            </p>
+            <p class="program-extra__option">
+              <input type="checkbox" name="milk" id="milk">
+              <label for="sugar-replacement">Молоко</label>
+            </p>
+            <p class="program-extra__option">
+              <input type="checkbox" name="vitamins" id="vitamins">
+              <label for="sugar-replacement">Витамины</label>
+            </p>
+        </fieldset>
+        <button class="form-nutrition__submit button" type="submit">Отправить заявку</button>
+        <p class="form-nutrition__notes">* — Обязательные поля</p>
+      </form>
+
     </main>
 
     <footer class="page-footer">
