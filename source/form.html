@@ -2,12 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy - подбор программы питания</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo.svg" width="192" height="38" alt="Логотип Cat energy" >
+    <header class="main-header">
+      <a class="page-header__logo logo" href="#">
+        <img class="logo__image" src="http://placehold.it/191x39" width="191" height="39" alt="Логотип Cat energy" >
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -25,97 +28,99 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main>
 
-      <h1>Подбор программы</h1>
+      <h1 class="main-title">Подбор программы</h1>
 
-      <form class="form-nutrition" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-nutrition__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="form-nutrition__main-info client-info">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <fieldset>
           <legend>Основные данные</legend>
-          <p class="client-info__characteristic">
-            <label class="client-info__name" for="client-name">Имя:*</label>
-            <input class="client-info__value" id="client-name" name="client-name" type="text" placeholder="Барсик">
+          <p>
+            <label class="form__label" for="client-name">Имя:*</label>
+            <input class="form__input-text" type="text" id="client-name" name="client-name" placeholder="Барсик">
           </p>
-          <p class="client-info__characteristic">
-            <label class="client-info__name" for="client-weight">Вес (кг):*</label>
-            <input class="client-info__value" id="client-weight" name="client-weight" type="text" placeholder="7">
+          <p>
+            <label class="form__label" for="client-weight">Вес (кг):*</label>
+            <input class="form__input-text" type="text" id="client-weight" name="client-weight" placeholder="7">
           </p>
-          <p class="client-info__characteristic">
-            <label class="client-info__name" for="client-age">Возраст (лет):</label>
-            <input class="client-info__value" id="client-age" name="client-age" type="text" placeholder="7">
+          <p>
+            <label class="form__label" for="client-age">Возраст (лет):</label>
+            <input class="form__input-text" type="text" id="client-age" name="client-age" placeholder="7">
           </p>
         </fieldset>
-        <fieldset class="form-nutrition__program-select program-select">
+        <fieldset class="form__program-select program-select">
           <legend>Выбор программы питания</legend>
-            <p class="program-select__option">
-              <input type="radio" name="program-mode" id="weight-loss" value="weight-loss">
-              <label for="weight-loss">Похудение</label>
-            </p>
-            <p class="program-select__option">
-              <input type="radio" name="program-mode" id="weight-gain" value="weight-gain">
-              <label for="weight-gain">Набор массы</label>
-            </p>
-            <p class="program-select__option">
-              <input type="radio" name="program-mode" id="other" value="other">
-              <label for="other">Не знаю (Нужен ваш совет)</label>
-            </p>
+          <p>
+            <input class="form__input-radio" type="radio" name="program-mode" id="weight-loss" value="weight-loss">
+            <label class="form__label" for="weight-loss">Похудение</label>
+          </p>
+          <p>
+            <input class="form__input-radio" type="radio" name="program-mode" id="weight-gain" value="weight-gain">
+            <label class="form__label" for="weight-gain">Набор массы</label>
+          </p>
+          <p>
+            <input class="form__input-radio" type="radio" name="program-mode" id="other" value="other">
+            <label class="form__label" for="other">Не знаю (Нужен ваш совет)</label>
+          </p>
         </fieldset>
-        <fieldset class="form-nutrition__client-contacts client-contacts">
+        <fieldset class="form__client-contacts client-contacts">
           <legend>Контактные данные (владельца кота)</legend>
-          <p class="client-contacts__characteristic">
-            <label class="client-contacts__name" for="client-email">E-mail:*</label>
-            <input class="client-contacts__value" id="client-email" name="client-email" type="text" placeholder="kuklachev@gmail.com">
+          <p>
+            <label class="form__label" for="client-email">E-mail:*</label>
+            <input class="form__input-email" type="email" id="client-email" name="client-email" placeholder="kuklachev@gmail.com">
           </p>
-          <p class="client-contacts__characteristic">
-            <label class="client-contacts__name" for="client-phone">Телефон:*</label>
-            <input class="client-contacts__value" id="client-phone" name="client-phone" type="text" placeholder="8 (960) 900-60-90">
+          <p>
+            <label class="form__label" for="client-phone">Телефон:*</label>
+            <input class="form__input-tel" type="tel" id="client-phone" name="client-phone" placeholder="8 (960) 900-60-90">
           </p>
         </fieldset>
-        <fieldset class="form-nutrition__client-comment client-comment">
+        <fieldset class="form__client-comment client-comment">
           <legend>Комментарий</legend>
-          <label class="client-comment__name visually-hidden" for="client-comment__value">Комментарий:</label>
-          <textarea class="client-comment__value" id="client-comment__value" name="client-comment" rows="4">Расскажите обо всех повадках кота</textarea>
+          <label class="visually-hidden" for="client-comment__value">Комментарий:</label>
+          <textarea class="form__textarea" id="client-comment__value" name="client-comment" rows="4">Расскажите обо всех повадках кота</textarea>
         </fieldset>
-        <fieldset class="form-nutrition__program-extra program-extra">
+        <fieldset class="form__program-extra program-extra">
           <legend>Дополнительно</legend>
-            <p class="program-extra__option">
-              <input type="checkbox" name="sugar-replacement" id="sugar-replacement" checked>
-              <label for="sugar-replacement">Сахарозаменитель</label>
+            <p>
+              <input class="form__input-checkbox" type="checkbox" name="sugar-replacement" id="sugar-replacement" checked>
+              <label class="form__label" for="sugar-replacement">Сахарозаменитель</label>
             </p>
-            <p class="program-extra__option">
-              <input type="checkbox" name="water" id="water">
-              <label for="water">Питьевая вода</label>
+            <p>
+              <input class="form__input-checkbox" type="checkbox" name="water" id="water">
+              <label class="form__label" for="water">Питьевая вода</label>
             </p>
-            <p class="program-extra__option">
-              <input type="checkbox" name="milk" id="milk">
-              <label for="sugar-replacement">Молоко</label>
+            <p>
+              <input class="form__input-checkbox" type="checkbox" name="milk" id="milk">
+              <label class="form__label" for="sugar-replacement">Молоко</label>
             </p>
-            <p class="program-extra__option">
-              <input type="checkbox" name="vitamins" id="vitamins">
-              <label for="sugar-replacement">Витамины</label>
+            <p>
+              <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <label class="form__label" for="sugar-replacement">Витамины</label>
             </p>
         </fieldset>
-        <button class="form-nutrition__submit button" type="submit">Отправить заявку</button>
-        <p class="form-nutrition__notes">* — Обязательные поля</p>
+        <button class="form__submit button" type="submit">Отправить заявку</button>
+        <p class="form__notes">* — Обязательные поля</p>
       </form>
 
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-          <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </p>
-          <p class="contacts__map">
-            <img class="contacts__map-image" src="img/map.jpg" alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-          </p>
+    <footer class="main-footer">
+
+      <div class="main-footer__contacts contacts">
+        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8<br>
+          Санкт-Петербург
+        </p>
+        <p class="contacts__map">
+          <img class="contacts__map-image" src="http://placehold.it/320x400" width="320" height="400" alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </p>
       </div>
-      <div class="page-footer__social social">
-        <p class="social__logo">
-          <img class="social__logo-image" src="img/footer-logo.svg" alt="Cat Energy">
+
+      <div class="main-footer__social social">
+        <p class="footer-logo">
+          <img class="footer-logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
         </p>
         <ul class="social__list">
           <li class="social__item">
@@ -129,10 +134,14 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+
+      <div class="main-footer__copyright copyright">
         <b class="copyright__text">HTML Academy</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          HTML Academy
+        </a>
       </div>
+
     </footer>
   </body>
 </html>
