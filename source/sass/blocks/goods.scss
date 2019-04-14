@@ -1,0 +1,41 @@
+.goods__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.goods__item {
+  padding: 20px;
+  border-top: 1px solid #ededed;
+}
+
+.goods__item:last-child {
+  border-bottom: 1px solid #ededed;
+}
+
+.goods__more {
+  padding: 20px;
+  padding-top: 80px;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+
+  background-image: url("../../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center 26px;
+}
+
+.goods__more-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.goods__more-description {
+  font-size: 12px;
+  line-height: 16px;
+}

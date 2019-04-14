@@ -1,5 +1,5 @@
 .main-nav {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -9,9 +9,17 @@
 }
 
 .main-nav__list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 
   text-align: center;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 10px 50px;
 }
 
 .main-nav__link[href] {
@@ -30,5 +38,3 @@
     color: #111111;
   }
 }
-
-

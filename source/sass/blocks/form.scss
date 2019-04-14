@@ -1,0 +1,73 @@
+.form__intro {
+  padding: 0 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form__section {
+  padding: 0 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__section-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.form__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__section--border {
+  border: none;
+}
+
+.form__input-text {
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  font: inherit;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus {
+    border-color: #444444;
+  }
+
+  &:invalid {
+    border-color: #ff8282;
+  }
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+}
+
+.form__submit {
+  margin: 0 auto;
+}
+
+.form__notes {
+  line-height: 16px;
+  text-align: center;
+}

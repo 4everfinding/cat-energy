@@ -1,0 +1,76 @@
+.extra-goods {
+  margin-bottom: 35px;
+}
+
+.extra-goods__title {
+  padding: 0 20px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.extra-goods__list {
+  padding: 0;
+  margin-bottom: 39px;
+
+  list-style: none;
+}
+
+.extra-goods__item {
+  padding: 15px 0;
+  border-top: 1px solid #ededed;
+}
+
+.extra-goods__item:last-child {
+  border-bottom: 1px solid #ededed;
+}
+
+.extra-goods__name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.extra-goods__features {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.extra-goods__quantity {
+  font-weight: 400;
+}
+
+.extra-goods__price {
+  text-align: right;
+}
+
+.extra-goods__promo {
+  padding-top: 185px;
+  padding-bottom: 33px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #6fb346;
+  background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 65px, 0 0;
+  background-size: 56px 61px, cover;
+}
+
+.extra-goods__promo-text {
+  width: 165px;
+  margin: 0 auto;
+}
