@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy - подбор программы питания</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,10 +12,10 @@
       <a class="main-header__logo container" href="index.html">
         <img src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat energy">
       </a>
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav container">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
@@ -34,38 +33,42 @@
       <h1 class="main-title container">Подбор программы</h1>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="form__intro container">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <section class="form__section">
-          <h2 class="visually-hidden">Основные данные</h2>
-          <p>
-            <label class="form__label" for="client-name">Имя:*</label>
-            <input class="form__input-text" type="text" id="client-name" name="client-name" placeholder="Барсик">
-          </p>
-          <p>
-            <label class="form__label" for="client-weight">Вес (кг):*</label>
-            <input class="form__input-text" type="text" id="client-weight" name="client-weight" placeholder="7">
-          </p>
-          <p>
-            <label class="form__label" for="client-age">Возраст (лет):</label>
-            <input class="form__input-text" type="text" id="client-age" name="client-age" placeholder="7">
-          </p>
+          <div class="container">
+            <h2 class="visually-hidden">Основные данные</h2>
+            <p>
+              <label class="form__label" for="client-name">Имя:*</label>
+              <input class="form__input-text" type="text" id="client-name" name="client-name" placeholder="Барсик">
+            </p>
+            <p>
+              <label class="form__label" for="client-weight">Вес (кг):*</label>
+              <input class="form__input-text" type="text" id="client-weight" name="client-weight" placeholder="7">
+            </p>
+            <p>
+              <label class="form__label" for="client-age">Возраст (лет):</label>
+              <input class="form__input-text" type="text" id="client-age" name="client-age" placeholder="7">
+            </p>
+          </div>
         </section>
         <section class="form__section">
-          <h2 class="visually-hidden">Выбор программы питания</h2>
-          <p>
-            <input class="form__input-radio" type="radio" name="program-mode" id="weight-loss" value="weight-loss">
-            <label class="form__label" for="weight-loss">Похудение</label>
-          </p>
-          <p>
-            <input class="form__input-radio" type="radio" name="program-mode" id="weight-gain" value="weight-gain">
-            <label class="form__label" for="weight-gain">Набор массы</label>
-          </p>
-          <p>
-            <input class="form__input-radio" type="radio" name="program-mode" id="other" value="other">
-            <label class="form__label" for="other">Не знаю (Нужен ваш совет)</label>
-          </p>
+          <div class="container">
+            <h2 class="visually-hidden">Выбор программы питания</h2>
+            <p>
+              <input class="form__input-radio" type="radio" name="program-mode" id="weight-loss" value="weight-loss">
+              <label class="form__label" for="weight-loss">Похудение</label>
+            </p>
+            <p>
+              <input class="form__input-radio" type="radio" name="program-mode" id="weight-gain" value="weight-gain">
+              <label class="form__label" for="weight-gain">Набор массы</label>
+            </p>
+            <p>
+              <input class="form__input-radio" type="radio" name="program-mode" id="other" value="other">
+              <label class="form__label" for="other">Не знаю (Нужен ваш совет)</label>
+            </p>
+          </div>
         </section>
-        <section class="form__section form__section--border">
+        <section class="form__section form__section--border container">
           <h2 class="form__section-title">Контактные данные (владельца кота)</h2>
           <p>
             <label class="form__label" for="client-email">E-mail:*</label>
@@ -76,12 +79,12 @@
             <input class="form__input-tel" type="tel" id="client-phone" name="client-phone" placeholder="8 (960) 900-60-90">
           </p>
         </section>
-        <section class="form__section">
+        <section class="form__section container">
           <h2 class="form__section-title">Комментарий</h2>
           <label class="visually-hidden" for="client-comment__value">Комментарий:</label>
           <textarea class="form__textarea" id="client-comment__value" name="client-comment" rows="4">Расскажите обо всех повадках кота</textarea>
         </section>
-        <section class="form__section form__section--border">
+        <section class="form__section form__section--border container">
           <h2 class="form__section-title">Дополнительно</h2>
             <p>
               <input class="form__input-checkbox" type="checkbox" name="sugar-replacement" id="sugar-replacement" checked>
@@ -100,16 +103,18 @@
               <label class="form__label" for="sugar-replacement">Витамины</label>
             </p>
         </section>
-        <button class="form__submit button" type="submit">Отправить заявку</button>
-        <p class="form__notes">* — Обязательные поля</p>
+        <div class="container">
+          <button class="button" type="submit">Отправить заявку</button>
+          <p class="form__notes">* — Обязательные поля</p>
+        </div>
       </form>
 
     </main>
 
     <footer class="main-footer">
 
-      <div class="main-footer__contacts contacts">
-        <div class="container">
+      <div class="main-footer__contacts main-footer__contacts--inner">
+        <div class="contacts container">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8<br>
@@ -117,32 +122,36 @@
           </p>
         </div>
         <p class="contacts__map">
-          <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+          <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </p>
       </div>
 
-      <div class="main-footer__social social">
-        <p class="footer-logo">
-          <img class="footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
-        </p>
-        <ul class="social__list container">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/catenergy" target="_blank">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.facebook.com/catenergy" target="_blank">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.instagram.com/catenergy" target="_blank">Мы в Фейсбуке</a>
-          </li>
-        </ul>
+      <div class="main-footer__social">
+        <div class="social container">
+          <p class="footer-logo">
+            <img class="footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/catenergy" target="_blank">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.facebook.com/catenergy" target="_blank">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="https://www.instagram.com/catenergy" target="_blank">Мы в Фейсбуке</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="main-footer__copyright copyright container">
-        <b class="copyright__text">HTML Academy</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          HTML Academy
-        </a>
+      <div class="main-footer__copyright">
+        <div class="copyright container">
+          <b class="copyright__text">HTML Academy</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            HTML Academy
+          </a>
+        </div>
       </div>
 
     </footer>
