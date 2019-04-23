@@ -1,5 +1,5 @@
 .stats__value {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -12,7 +12,7 @@
 }
 
 .example__subtitle {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

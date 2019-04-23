@@ -1,5 +1,7 @@
-.main-header {
-  padding-top: 10px;
+.main-header__logo {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .main-header__logo:hover {
@@ -8,4 +10,49 @@
 
 .main-header__logo:active {
   opacity: 0.6;
+}
+
+.main-header__nav {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #111111;
+
+  text-transform: uppercase;
+}
+
+.main-header__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+.main-header__item {
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-header__link {
+  display: block;
+  padding: 10px;
+}
+
+.main-header__link[href] {
+  color: #111111;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:visited {
+    color: #111111;
+  }
 }

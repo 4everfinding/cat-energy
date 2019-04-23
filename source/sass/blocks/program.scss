@@ -1,7 +1,7 @@
 .program__weight {
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+  background-color: $bg-secondary;
 }
 
 
@@ -9,7 +9,7 @@
   margin: 0;
   margin-bottom: 36px;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
