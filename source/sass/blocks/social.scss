@@ -1,3 +1,22 @@
 .social__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 415px;
+  }
+
+  .social__list {
+    border: none;
+  }
 }

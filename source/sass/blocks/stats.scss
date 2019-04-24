@@ -1,9 +1,16 @@
+.stats {
+  width: 122px;
+  border: 1px solid #cdcdcd;
+
+  text-align: center;
+}
+
 .stats__value {
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-secondary;
 }
 
 .stats__name {
@@ -11,12 +18,18 @@
   line-height: 12px;
 }
 
-.example__subtitle {
-  font-family: $font-secondary;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111111;
+@media (min-width: $tablet-width) {
+  .stats {
+    width: 160px;
+  }
+
+  .stats__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats__name {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
