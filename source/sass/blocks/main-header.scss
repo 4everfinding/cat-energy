@@ -42,9 +42,7 @@
 .main-header__link {
   display: block;
   padding: 10px;
-}
 
-.main-header__link {
   color: #111111;
 
   &:hover,
@@ -139,17 +137,17 @@
 
     color: #ffffff;
 
-      &:hover,
-      &:focus {
-        opacity: 0.6;
-      }
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
 
-      &:active {
-        opacity: 0.3;
-      }
+    &:active {
+      opacity: 0.3;
+    }
 
-      &:visited {
-        color: #ffffff;
-      }
+    &:visited {
+      color: #ffffff;
+    }
   }
 }
