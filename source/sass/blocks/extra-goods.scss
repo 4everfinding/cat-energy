@@ -93,14 +93,11 @@
   }
 
   .extra-goods__item {
+    display: flex;
+    flex-wrap: wrap;
     padding: 38px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
-  }
-
-  .extra-goods__item {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .extra-goods__name {
@@ -197,5 +194,4 @@
     padding-top: 190px;
     text-align: center;
   }
-
 }
