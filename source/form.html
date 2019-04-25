@@ -36,79 +36,87 @@
       <h1 class="main-title container">Подбор программы</h1>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form__intro container">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <section class="form__section">
-          <div class="container">
-            <h2 class="visually-hidden">Основные данные</h2>
-            <p>
-              <label class="form__label" for="client-name">Имя:*</label>
-              <input class="form__input-text" type="text" id="client-name" name="client-name" placeholder="Барсик">
-            </p>
-            <p>
-              <label class="form__label" for="client-weight">Вес (кг):*</label>
-              <input class="form__input-text" type="text" id="client-weight" name="client-weight" placeholder="7">
-            </p>
-            <p>
-              <label class="form__label" for="client-age">Возраст (лет):</label>
-              <input class="form__input-text" type="text" id="client-age" name="client-age" placeholder="7">
-            </p>
-          </div>
-        </section>
-        <section class="form__section">
-          <div class="container">
-            <h2 class="visually-hidden">Выбор программы питания</h2>
-            <p>
-              <input class="form__input-radio" type="radio" name="program-mode" id="weight-loss" value="weight-loss">
-              <label class="form__label" for="weight-loss">Похудение</label>
-            </p>
-            <p>
-              <input class="form__input-radio" type="radio" name="program-mode" id="weight-gain" value="weight-gain">
-              <label class="form__label" for="weight-gain">Набор массы</label>
-            </p>
-            <p>
-              <input class="form__input-radio" type="radio" name="program-mode" id="other" value="other">
-              <label class="form__label" for="other">Не знаю (Нужен ваш совет)</label>
-            </p>
-          </div>
-        </section>
-        <section class="form__section form__section--border container">
+        <p class="form__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="form__section-columns">
+          <section class="form__section">
+            <div class="container">
+              <h2 class="visually-hidden">Основные данные</h2>
+              <p class="form__input-wrapper">
+                <label class="form__label" for="client-name">Имя:*</label>
+                <input class="form__input-text" type="text" id="client-name" name="client-name" placeholder="Барсик">
+              </p>
+              <p class="form__input-wrapper">
+                <label class="form__label" for="client-weight">Вес (кг):*</label>
+                <input class="form__input-text" type="text" id="client-weight" name="client-weight" placeholder="7">
+              </p>
+              <p class="form__input-wrapper">
+                <label class="form__label" for="client-age">Возраст (лет):</label>
+                <input class="form__input-text" type="text" id="client-age" name="client-age" placeholder="7">
+              </p>
+            </div>
+          </section>
+          <section class="form__section form__section--program-weight">
+            <div class="container">
+              <h2 class="visually-hidden">Выбор программы питания</h2>
+              <p>
+                <input class="form__input-radio" type="radio" name="program-mode" id="weight-loss" value="weight-loss">
+                <label class="form__label" for="weight-loss">Похудение</label>
+              </p>
+              <p>
+                <input class="form__input-radio" type="radio" name="program-mode" id="weight-gain" value="weight-gain">
+                <label class="form__label" for="weight-gain">Набор массы</label>
+              </p>
+              <p>
+                <input class="form__input-radio" type="radio" name="program-mode" id="other" value="other">
+                <label class="form__label" for="other">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </div>
+          </section>
+        </div>
+        <section class="form__section form__section--border">
           <h2 class="form__section-title">Контактные данные (владельца кота)</h2>
-          <p>
-            <label class="form__label" for="client-email">E-mail:*</label>
-            <input class="form__input-email" type="email" id="client-email" name="client-email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p>
-            <label class="form__label" for="client-phone">Телефон:*</label>
-            <input class="form__input-tel" type="tel" id="client-phone" name="client-phone" placeholder="8 (960) 900-60-90">
-          </p>
+          <div class="container">
+            <p class="form__input-wrapper">
+              <label class="form__label" for="client-email">E-mail:*</label>
+              <input class="form__input-email" type="email" id="client-email" name="client-email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="form__input-wrapper">
+              <label class="form__label" for="client-phone">Телефон:*</label>
+              <input class="form__input-tel" type="tel" id="client-phone" name="client-phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </div>
         </section>
-        <section class="form__section container">
+        <section class="form__section">
           <h2 class="visually-hidden">Комментарий</h2>
-          <label class="form__section-title" for="client-comment">Комментарий:</label>
-          <textarea class="form__textarea" id="client-comment" name="client-comment" rows="4">Расскажите обо всех повадках кота</textarea>
+            <label class="form__section-title" for="client-comment">Комментарий:</label>
+          <div class="container">
+            <textarea class="form__textarea" id="client-comment" name="client-comment" rows="4">Расскажите обо всех повадках кота</textarea>
+          </div>
         </section>
-        <section class="form__section form__section--border container">
+        <section class="form__section form__section--border form__section--extra">
           <h2 class="form__section-title">Дополнительно</h2>
-            <p>
-              <input class="form__input-checkbox" type="checkbox" name="sugar-replacement" id="sugar-replacement" checked>
-              <label class="form__label" for="sugar-replacement">Сахарозаменитель</label>
-            </p>
-            <p>
-              <input class="form__input-checkbox" type="checkbox" name="water" id="water">
-              <label class="form__label" for="water">Питьевая вода</label>
-            </p>
-            <p>
-              <input class="form__input-checkbox" type="checkbox" name="milk" id="milk">
-              <label class="form__label" for="milk">Молоко</label>
-            </p>
-            <p>
-              <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins">
-              <label class="form__label" for="vitamins">Витамины</label>
-            </p>
+            <div class="container">
+              <p class="form__input-wrapper">
+                <input class="form__input-checkbox" type="checkbox" name="sugar-replacement" id="sugar-replacement" checked>
+                <label class="form__label" for="sugar-replacement">Сахарозаменитель</label>
+              </p>
+              <p class="form__input-wrapper">
+                <input class="form__input-checkbox" type="checkbox" name="water" id="water">
+                <label class="form__label" for="water">Питьевая вода</label>
+              </p>
+              <p class="form__input-wrapper">
+                <input class="form__input-checkbox" type="checkbox" name="milk" id="milk">
+                <label class="form__label" for="milk">Молоко</label>
+              </p>
+              <p class="form__input-wrapper">
+                <input class="form__input-checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form__label" for="vitamins">Витамины</label>
+              </p>
+              <button class="button button--submit" type="submit">Отправить заявку</button>
+              <p class="form__notes">* — Обязательные поля</p>
+            </div>
         </section>
         <div class="container">
-          <button class="button" type="submit">Отправить заявку</button>
-          <p class="form__notes">* — Обязательные поля</p>
         </div>
       </form>
 

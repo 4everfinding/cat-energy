@@ -64,6 +64,10 @@
   .button--show-all {
     width: 249px;
   }
+
+  .button--submit {
+    width: 280px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -77,5 +81,9 @@
 
   .button--show-all {
     width: 169px;
+  }
+
+  .button--submit {
+    width: 570px;
   }
 }
