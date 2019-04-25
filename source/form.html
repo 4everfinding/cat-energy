@@ -10,6 +10,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
           <img src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat energy">
         </a>
@@ -17,16 +18,17 @@
           <button class="main-header__toggle" type="button">Открыть меню</button>
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a class="main-header__link" href="index.html">Главная</a>
+              <a class="main-header__link main-header__link--inner" href="index.html">Главная</a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="catalog.html">Каталог продукции</a>
+              <a class="main-header__link main-header__link--inner" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-header__item main-header__item--active">
-              <a class="main-header__link">Подбор программы</a>
+              <a class="main-header__link main-header__link--inner">Подбор программы</a>
             </li>
           </ul>
         </nav>
+      </div>
     </header>
 
     <main>
@@ -119,19 +121,19 @@
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8<br>
-            Санкт-Петербург
+            <span class="contacts__city">Санкт-Петербург</span>
           </p>
         </div>
-        <p class="contacts__map">
+        <div class="main-footer__map">
           <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-        </p>
+        </div>
       </div>
 
-      <div class="main-footer__social">
-        <div class="social container">
-          <p class="footer-logo">
-            <img class="footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
-          </p>
+      <div class="main-footer__wrapper">
+        <div class="container">
+          <div class="main-footer__logo">
+            <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+          </div>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="https://vk.com/catenergy" target="_blank">Мы в Вконтакте</a>
@@ -143,15 +145,12 @@
               <a class="social__link social__link--fb" href="https://www.instagram.com/catenergy" target="_blank">Мы в Фейсбуке</a>
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div class="main-footer__copyright">
-        <div class="copyright container">
-          <b class="copyright__text">HTML Academy</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            HTML Academy
-          </a>
+          <div class="main-footer__copyright">
+            <b class="main-footer__copyright-text">HTML Academy</b>
+            <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+              HTML Academy
+            </a>
+          </div>
         </div>
       </div>
 

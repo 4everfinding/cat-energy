@@ -150,4 +150,12 @@
       color: #ffffff;
     }
   }
+
+  .main-header__link--inner {
+    color: $color-secondary;
+
+    &:visited {
+      color: $color-secondary;
+    }
+  }
 }

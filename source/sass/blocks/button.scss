@@ -52,4 +52,30 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  .button--order {
+    width: 249px;
+  }
+
+  .button--order-extra {
+    width: 100%;
+  }
+
+  .button--show-all {
+    width: 249px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--order {
+    width: 169px;
+  }
+
+  .button--order-extra {
+    width: 245px;
+  }
+
+  .button--show-all {
+    width: 169px;
+  }
 }

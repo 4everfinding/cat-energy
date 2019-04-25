@@ -17,3 +17,9 @@
 .product__feature-value {
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    background-color: $bg-secondary;
+  }
+}
