@@ -1,7 +1,14 @@
 .main-title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #111111;
+  color: $color-secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    margin-bottom: 40px;
+    font-size: 60px;
+  }
 }

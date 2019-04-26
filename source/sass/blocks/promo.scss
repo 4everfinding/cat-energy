@@ -2,14 +2,14 @@
   padding-top: 25px;
   margin-bottom: 20px;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-weight: 400;
   text-align: center;
   color: #ffffff;
 
   // подумать как задействовать фоновый цвет
-  // background-color: #68b738;
-  background-image: url("../../img/index-can-mobile@1x.png"), url("../../img/index-background-mobile@1x.jpg");
+  // background-color: #63a73a;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 167px, top center;
 }
@@ -32,4 +32,56 @@
 
 .promo__select {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    min-height: 850px;
+    padding-left: 110px;
+
+    text-align: left;
+    color: $color-secondary;
+
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 25px 225px;
+
+    .container {
+      width: 427px;
+      margin: 0;
+    }
+  }
+
+  .promo__title {
+    margin-bottom: 40px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 50px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 1220px;
+    margin: 0 auto;
+    min-height: 500px;
+
+    padding-left: 80px;
+    padding-top: 220px;
+    margin-top: -108px;
+
+    text-align: left;
+    color: $color-secondary;
+
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right 325px top 140px, right top;
+  }
 }

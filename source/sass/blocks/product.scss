@@ -1,5 +1,5 @@
 .product__name {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -16,4 +16,10 @@
 
 .product__feature-value {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    background-color: $bg-secondary;
+  }
 }

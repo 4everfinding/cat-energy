@@ -1,7 +1,7 @@
 .program__weight {
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+  background-color: $bg-secondary;
 }
 
 
@@ -9,12 +9,12 @@
   margin: 0;
   margin-bottom: 36px;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-secondary;
 }
 
 .program__description {
@@ -29,4 +29,44 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .program__weight {
+    padding-top: 82px;
+    padding-right: 295px;
+    padding-left: 53px;
+    margin-bottom: 30px;
+  }
+
+  .program__title {
+    margin-bottom: 25px;
+
+    font-size: 36px;
+  }
+
+  .program__description {
+    margin-bottom: 50px;
+    border: none;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__more {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__weight {
+    width: 470px;
+    padding: 50px;
+  }
 }

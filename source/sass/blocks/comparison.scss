@@ -1,7 +1,49 @@
+.comparison {
+  text-align: center;
+}
+
 .comparison__label {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+}
+
+.comparison__image {
+  width: 311px;
+  height: 232px;
+}
+
+.comparison__image--after {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .comparison {
+    margin-top: 191px;
+    background-color: $bg-secondary;
+  }
+
+  .comparison__label {
+    font-size: 20px;
+  }
+
+  .comparison__image--before {
+    margin-top: -191px;
+    width: 677px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparison {
+    margin-top: 250px;
+  }
+
+  .comparison__image--before {
+    margin-top: -250px;
+    width: 677px;
+    height: 499px;
+  }
 }
