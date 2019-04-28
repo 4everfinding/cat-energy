@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy - каталог продукции</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,17 +13,19 @@
         <a class="main-header__logo" href="index.html">
           <img src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat energy">
         </a>
-        <nav class="main-header__nav">
-          <button class="main-header__toggle" type="button">Открыть меню</button>
+        <nav class="main-header__nav main-header__nav--closed main-header__nav--nojs">
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a class="main-header__link main-header__link--inner" href="index.html">Главная</a>
+              <a class="main-header__link-inner" href="index.html">Главная</a>
             </li>
             <li class="main-header__item main-header__item--active">
-              <a class="main-header__link main-header__link--inner">Каталог продукции</a>
+              <a class="main-header__link-inner">Каталог продукции</a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link main-header__link--inner" href="form.html">Подбор программы</a>
+              <a class="main-header__link-inner" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -135,7 +136,7 @@
               <div class="goods__item-wrapper">
                 <a class="product__info" href="product5.html">
                   <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г Гречка">
-                  <h3 class="product__name">Cat Energy PRO 500 г</h3>
+                  <h3 class="product__name">Cat Energy Pro 500 г</h3>
                 </a>
                 <table class="product__features">
                   <tr>
@@ -175,6 +176,7 @@
                   </tr>
                 </table>
                 <a class="button button--order" href="order.html">Заказать</a>
+              </div>
             </li>
             <li class="goods__item product">
               <div class="goods__item-wrapper">
@@ -283,17 +285,19 @@
           <div class="main-footer__logo">
             <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </div>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/catenergy" target="_blank">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.facebook.com/catenergy" target="_blank">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.instagram.com/catenergy" target="_blank">Мы в Фейсбуке</a>
-            </li>
-          </ul>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/catenergy" target="_blank">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.facebook.com/catenergy" target="_blank">Мы в Инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://www.instagram.com/catenergy" target="_blank">Мы в Фейсбуке</a>
+              </li>
+            </ul>
+          </div>
           <div class="main-footer__copyright">
             <b class="main-footer__copyright-text">HTML Academy</b>
             <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
@@ -304,5 +308,6 @@
       </div>
 
     </footer>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
