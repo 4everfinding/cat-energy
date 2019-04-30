@@ -10,29 +10,51 @@
   color: #111111;
 }
 
+.comparison__images {
+  margin-bottom: 28px;
+}
+
 .comparison__image {
-  width: 311px;
-  height: 232px;
+  width: 320px;
+  height: 240px;
 }
 
 .comparison__image--after {
   display: none;
 }
 
+.comparison__toggle {
+  // width: 85px;
+  // height: 16px;
+}
+
 @media (min-width: $tablet-width) {
   .comparison {
-    margin-top: 191px;
+    padding-bottom: 69px;
+    margin-top: 235px;
     background-color: $bg-secondary;
   }
 
-  .comparison__label {
-    font-size: 20px;
+  .comparison__images {
+    margin-bottom: 17px;
   }
 
   .comparison__image--before {
-    margin-top: -191px;
-    width: 677px;
-    height: 499px;
+    margin-top: -170px;
+    margin-left: 14px;
+    width: 690px;
+    height: 517px;
+  }
+
+  .comparison__label {
+    border-bottom: 1px dotted #bebebe;
+    font-size: 20px;
+  }
+
+  .comparison__toggle {
+    width: 430px;
+    margin-left: 17px;
+    margin-right: 17px;
   }
 }
 
@@ -43,7 +65,7 @@
 
   .comparison__image--before {
     margin-top: -250px;
-    width: 677px;
+    width: 690px;
     height: 499px;
   }
 }

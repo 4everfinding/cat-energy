@@ -267,10 +267,19 @@
     }
   }
 
+  .main-header__item--inner.main-header__item--active::after {
+    background-color: #68b738;
+  }
+
   .main-header__link {
     padding-top: 23px;
 
     color: #ffffff;
+  }
+
+
+  .main-header__item--inner .main-header__link {
+    color: $color-secondary;
   }
 
   .main-header__link[href] {
@@ -284,7 +293,4 @@
     }
   }
 
-  .main-header__link--inner {
-    color: $color-secondary;
-  }
 }

@@ -1,6 +1,10 @@
+.details {
+  margin-bottom: 45px;
+}
+
 .details__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   font-family: $font-secondary;
   font-size: 36px;
@@ -21,7 +25,7 @@
 
   padding-top: 5px;
   padding-left: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .details__item::before {
@@ -29,15 +33,18 @@
 
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2px;
 
   width: 60px;
   height: 60px;
 
   background-color: #68b738;
-  background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.details__item--benefit::before {
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .details__item--simplicity::before {
@@ -53,6 +60,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .details {
+    margin-bottom: 15px;
+  }
+
   .details__title {
     font-size: 60px;
     line-height: 60px;
@@ -61,53 +72,68 @@
   .details__list {
     display: flex;
     flex-wrap: wrap;
-    min-height: 600px;
+    justify-content: space-between;
   }
 
   .details__item {
     width: 250px;
-    padding-top: 117px;
-    padding-right: 104px;
+    padding-top: 157px;
+    padding-right: 74px;
     padding-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 88px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
   .details__item::before {
+    top: 46px;
+
     width: 80px;
     height: 80px;
   }
 
   .details__item::after {
-    content: "1";
-
     position: absolute;
     z-index: -1;
-    left: 50%;
-    top: -30px;
-    transform: translate(-50%);
+    top: 6px;
 
+    font-family: $font-secondary;
     font-size: 281px;
     line-height: 281px;
     color: #f2f2f2;
   }
 
+  .details__item--benefit::after {
+    content: "1";
+
+    left: 118px;
+  }
+
   .details__item--simplicity::after {
     content: "2";
+
+    left: 111px;
   }
 
   .details__item--transition::after {
     content: "3";
+
+    left: 113px;
   }
 
   .details__item--enjoy::after {
     content: "4";
+
+    left: 113px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .details {
+    margin-bottom: 174px;
+  }
+
   .details__list {
     justify-content: space-between;
     min-height: 240px;
@@ -115,15 +141,18 @@
 
   .details__item {
     width: 245px;
+    padding-top: 155px;
     padding-right: 0;
   }
 
   .details__item::before {
-    width: 60px;
-    height: 60px;
+    top: 44px;
+
+    width: 80px;
+    height: 80px;
   }
 
   .details__item::after {
-    left: 127px;
+    top: 4px;
   }
 }

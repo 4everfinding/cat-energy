@@ -2,7 +2,8 @@
   display: block;
   box-sizing: border-box;
   width: 280px;
-  padding: 11px;
+  padding: 10px;
+  padding-bottom: 12px;
   border: none;
 
   font-family: $font-secondary;
@@ -11,7 +12,7 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: $bg-primary;
+  color: #ffffff;
 
   background-color: #68b738;
 
@@ -48,6 +49,9 @@
 @media (min-width: $tablet-width) {
   .button--select {
     width: 245px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: -52px;
 
     font-size: 20px;
     line-height: 20px;
@@ -71,6 +75,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .button--select {
+    margin-left: 0;
+  }
+
   .button--order {
     width: 169px;
   }
