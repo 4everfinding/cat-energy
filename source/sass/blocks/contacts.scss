@@ -1,7 +1,8 @@
 .contacts {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-top: 29px;
+  padding-bottom: 25px;
 }
 
 .contacts__title {
@@ -25,7 +26,8 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: 625px;
-    padding: 40px;
+    padding: 39px;
+    padding-bottom: 59px;
   }
 
   .contacts__title {
@@ -42,7 +44,7 @@
 
   .contacts__city {
     display: block;
-    margin-top: 10px;
+    margin-top: 18px;
   }
 }
 

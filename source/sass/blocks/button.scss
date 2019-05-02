@@ -27,11 +27,15 @@
 }
 
 .button--order {
+  padding-top: 11px;
+  padding-bottom: 9px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .button--show-all {
+  padding-bottom: 10px;
+
   font-size: 16px;
   line-height: 20px;
   color: #444444;
@@ -63,6 +67,10 @@
 
   .button--order-extra {
     width: 100%;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .button--show-all {

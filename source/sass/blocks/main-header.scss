@@ -1,5 +1,6 @@
 .main-header {
-  padding-top: 13px;
+  padding-top: 12px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-header__logo {
@@ -39,7 +40,7 @@
 
 .main-header__toggle {
   position: absolute;
-  top: -43px;
+  top: -42px;
   right: 20px;
   z-index: 2;
 
@@ -149,6 +150,7 @@
 @media (min-width: $tablet-width) {
   .main-header {
     padding-top: 24px;
+    border: none;
   }
 
   .main-header__wrapper {

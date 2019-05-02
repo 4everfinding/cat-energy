@@ -1,8 +1,7 @@
 .example {
   padding: 0;
   padding-top: 16px;
-  padding-bottom: 32px;
-  margin-bottom: 29px;
+  padding-bottom: 36px;
 
   color: $color-primary;
 
@@ -58,7 +57,7 @@
     padding-top: 42px;
     padding-bottom: 0;
     margin-bottom: 25px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #e6e6e6;
 
     background-color: $bg-primary;
   }
@@ -107,7 +106,6 @@
   .example {
     background-color: $bg-secondary;
     border: none;
-
   }
 
   .example__title {

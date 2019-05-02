@@ -1,13 +1,21 @@
 .goods__list {
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
 
   list-style: none;
 }
 
 .goods__item {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   border-top: 1px solid #ededed;
+}
+
+.goods__item--more {
+  padding-bottom: 24px;
+  padding-top: 26px;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
 }
 
 .goods__item-wrapper {
@@ -15,19 +23,16 @@
   margin: 0 auto;
 }
 
-.goods__item--more {
-  padding-bottom: 20px;
-  padding-top: 80px;
-  border-bottom: 1px solid #ededed;
-  text-align: center;
-
-  background-image: url("../img/icon-plus-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-position: center 26px;
+.goods__plus {
+  opacity: 0.2;
 }
 
+
 .goods__more-title {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 8px;
+
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
@@ -37,11 +42,18 @@
 }
 
 .goods__more-description {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 12px;
   line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
+  .goods__list {
+    margin-bottom: 34px;
+  }
+
   .goods__wrapper {
     display: block;
     width: 708px;
@@ -66,17 +78,51 @@
 
   .goods__item--more {
     width: 322px;
-    border: 1px solid #ededed;
+    padding-top: 54px;
+    padding-bottom: 39px;
+    margin-top: 108px;
+    margin-bottom: 31px;
+    border: 1px solid #e6e6e6;
   }
 
   .goods__item-wrapper {
     width: 249px;
   }
+
+  .goods__plus {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 26px;
+  }
+
+  .goods__more-title {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+    font-size: 20px;
+  }
+
+  .goods__more-description {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 86px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+
   .goods__wrapper {
     width: 1220px;
+  }
+
+  .goods__list {
+    margin-bottom: 40px;
   }
 
   .goods__item {
@@ -96,7 +142,8 @@
 
   .goods__item--more {
     width: 243px;
-    border: 1px solid #ededed;
+    margin-bottom: 34px;
+    border: 1px solid #e6e6e6;
   }
 
   .goods__item-wrapper {
