@@ -11,7 +11,6 @@
 }
 
 .main-header__logo[href] {
-
   &:hover {
     opacity: 0.8;
   }
@@ -65,11 +64,10 @@
   height: 2px;
 
   background-color: #000000;
-  box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
 
 .main-header__nav--opened .main-header__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -116,7 +114,6 @@
   padding-bottom: 22px;
 
   color: #111111;
-
 }
 
 .main-header__link[href] {
@@ -253,7 +250,6 @@
     border: none;
 
     &--active {
-
       &::after {
         content: "";
 
@@ -294,5 +290,4 @@
       opacity: 0.3;
     }
   }
-
 }

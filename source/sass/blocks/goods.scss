@@ -50,10 +50,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods__list {
-    margin-bottom: 34px;
-  }
-
   .goods__wrapper {
     display: block;
     width: 708px;
@@ -63,6 +59,8 @@
   .goods__list {
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: 34px;
   }
 
   .goods__item {
@@ -116,7 +114,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .goods__wrapper {
     width: 1220px;
   }

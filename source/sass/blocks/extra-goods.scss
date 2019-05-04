@@ -31,6 +31,7 @@
 
 .extra-goods__list {
   padding: 0;
+  margin: 0;
   margin-bottom: 39px;
 
   list-style: none;
@@ -204,7 +205,7 @@
 @media (min-width: $desktop-width) {
   .extra-goods__title {
 
-    margin-bottom: 67px;
+    margin-bottom: 81px;
     margin-left: 38px;
 
     font-size: 36px;
@@ -223,6 +224,7 @@
 
   .extra-goods__list {
     width: 895px;
+    margin-bottom: 0;
   }
 
   .extra-goods__item {
@@ -271,12 +273,12 @@
 
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 70px, 0 0;
+    background-position: center 65px, 0 0;
     background-size: 56px 61px, cover;
   }
 
   .extra-goods__promo-text {
-    padding-top: 180px;
+    padding-top: 186px;
     text-align: center;
   }
 }

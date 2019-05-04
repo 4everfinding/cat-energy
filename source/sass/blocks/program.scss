@@ -138,7 +138,7 @@
 
       position: absolute;
       right: 62px;
-      top:92px;
+      top: 92px;
 
       width: 200px;
       height: 200px;
@@ -190,8 +190,8 @@
 
     font-size: 36px;
 
-
-    &::before , &::after {
+    &::before,
+    &::after {
       content: none;
     }
   }
@@ -237,7 +237,8 @@
     padding-bottom: 61px;
     padding-left: 52px;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: none;
     }
   }
@@ -300,9 +301,9 @@
   }
 
   .program__more::after {
-      // противоречия макета в плане отступа слева от ссылки, надо обсудить
-      left: 130px;
-      top: 3px;
+    // противоречия макета в плане отступа слева от ссылки, надо обсудить
+    left: 130px;
+    top: 3px;
   }
 
   .program__weight--gain .program__more::after {

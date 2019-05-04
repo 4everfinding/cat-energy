@@ -8,6 +8,10 @@
   color: $color-secondary;
 }
 
+.main-title--form {
+  margin-bottom: 26px;
+}
+
 @media (min-width: $tablet-width) {
   .main-title {
     margin-top: 50px;
