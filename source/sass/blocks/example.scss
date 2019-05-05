@@ -1,7 +1,7 @@
 .example {
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 36px;
 
   color: $color-primary;
 
@@ -10,13 +10,18 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: $color-secondary;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .example__stats-wrapper {
@@ -29,6 +34,7 @@
 .example__stats {
   flex-shrink: 0;
   margin-right: 32px;
+  margin-bottom: 20px;
 }
 
 .example__stats:last-of-type {
@@ -36,6 +42,8 @@
 }
 
 .example__subtitle {
+  margin-bottom: 21px;
+
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 20px;
@@ -46,14 +54,24 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    padding-top: 42px;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    border-top: 1px solid #e6e6e6;
+
     background-color: $bg-primary;
   }
 
   .example__title {
+    margin-bottom: 65px;
+
     font-size: 60px;
   }
 
   .example__description {
+    width: 680px;
+    margin-bottom: 45px;
+
     font-size: 16px;
     line-height: 24px;
   }
@@ -65,6 +83,7 @@
   }
 
   .example__stats {
+    margin-top: 8px;
     margin-right: 42px;
   }
 
@@ -73,15 +92,26 @@
     margin-left: auto;
 
     font-size: 20px;
+    line-height: 20px;
     text-align: right;
+  }
+
+  .example__expanses {
+    display: block;
+    margin-top: 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    margin-top: 100px;
+    margin-bottom: 0;
 
-    background-color: $bg-secondary;
+    background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 60%, #eaeaea 60%, #eaeaea 100%);
+    border: none;
+  }
+
+  .example__title {
+    margin-bottom: 147px;
   }
 
   .example__inner-wrapper {
@@ -89,14 +119,19 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 1220px;
-    margin-top: -100px;
+    margin-top: -179px;
     margin-left: auto;
     margin-right: auto;
 
     .container {
-      width: 450px;
+      width: 438px;
       margin: 0;
     }
+  }
+
+  .example__description {
+    width: auto;
+    margin-bottom: 61px;
   }
 
   .example__stats-wrapper {
@@ -104,9 +139,19 @@
     flex-wrap: wrap;
   }
 
+  .example__stats {
+    margin-bottom: 40px;
+  }
+
   .example__subtitle {
-    width: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
     margin-left: 0;
     text-align: left;
+  }
+
+  .example__expanses {
+    margin: 0;
   }
 }

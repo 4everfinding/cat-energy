@@ -2,7 +2,8 @@
   display: block;
   box-sizing: border-box;
   width: 280px;
-  padding: 11px;
+  padding: 10px;
+  padding-bottom: 12px;
   border: none;
 
   font-family: $font-secondary;
@@ -11,7 +12,7 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: $bg-primary;
+  color: #ffffff;
 
   background-color: #68b738;
 
@@ -26,11 +27,15 @@
 }
 
 .button--order {
+  padding-top: 11px;
+  padding-bottom: 9px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .button--show-all {
+  padding-bottom: 10px;
+
   font-size: 16px;
   line-height: 20px;
   color: #444444;
@@ -45,9 +50,19 @@
   }
 }
 
+.button--submit {
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .button--select {
     width: 245px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: -52px;
 
     font-size: 20px;
     line-height: 20px;
@@ -59,6 +74,10 @@
 
   .button--order-extra {
     width: 100%;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .button--show-all {
@@ -66,11 +85,20 @@
   }
 
   .button--submit {
-    width: 280px;
+    width: 283px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .button--select {
+    margin-left: 0;
+  }
+
   .button--order {
     width: 169px;
   }
@@ -84,6 +112,7 @@
   }
 
   .button--submit {
-    width: 570px;
+    width: 568px;
+    padding-left: 10px;
   }
 }

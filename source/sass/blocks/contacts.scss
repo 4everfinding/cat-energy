@@ -1,7 +1,8 @@
 .contacts {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-top: 29px;
+  padding-bottom: 25px;
 }
 
 .contacts__title {
@@ -25,7 +26,8 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: 625px;
-    padding: 40px;
+    padding: 39px;
+    padding-bottom: 59px;
   }
 
   .contacts__title {
@@ -34,7 +36,7 @@
   }
 
   .contacts__address {
-    width: 160px;
+    width: 165px;
 
     font-size: 16px;
     text-align: right;
@@ -42,7 +44,7 @@
 
   .contacts__city {
     display: block;
-    margin-top: 10px;
+    margin-top: 18px;
   }
 }
 
@@ -50,11 +52,13 @@
   .contacts {
     position: absolute;
     z-index: 2;
-    left: 20%;
-    top: 100px;
+    // left: 20%;
+    left: 40px;
+    top: 95px;
 
-    width: 400px;
-    padding-left: 80px;
+    width: 415px;
+    padding-top: 65px;
+    padding-left: 76px;
     padding-right: 80px;
 
     background-color: $bg-primary;
