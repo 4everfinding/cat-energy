@@ -36,7 +36,7 @@
   }
 
   .contacts__address {
-    width: 160px;
+    width: 165px;
 
     font-size: 16px;
     text-align: right;
@@ -52,11 +52,13 @@
   .contacts {
     position: absolute;
     z-index: 2;
-    left: 20%;
-    top: 100px;
+    // left: 20%;
+    left: 40px;
+    top: 95px;
 
-    width: 400px;
-    padding-left: 80px;
+    width: 415px;
+    padding-top: 65px;
+    padding-left: 76px;
     padding-right: 80px;
 
     background-color: $bg-primary;

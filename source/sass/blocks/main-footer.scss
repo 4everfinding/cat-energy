@@ -78,6 +78,7 @@
     padding-top: 46px;
   }
 
+
   .main-footer__wrapper .container {
     display: flex;
     justify-content: space-between;
@@ -108,7 +109,11 @@
     height: 400px;
   }
 
+  .main-footer__wrapper--inner {
+    padding-top: 22px;
+  }
+
   .main-footer__copyright {
-    width: 220px;
+    width: 164px;
   }
 }

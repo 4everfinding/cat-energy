@@ -39,8 +39,10 @@
   height: 6px;
   margin-top: 3px;
   margin-left: 4px;
+
   background-color: #68b738;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .comparison__label {
@@ -58,7 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .comparison {
-    padding-bottom: 69px;
+    padding-bottom: 68px;
     margin-top: 235px;
     background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
   }
@@ -67,7 +69,7 @@
     position: relative;
     width: 708px;
     min-height: 355px;
-    margin: 0 auto 17px;
+    margin: 0 auto 12px;
   }
 
   .comparison__image {
@@ -81,33 +83,74 @@
   .comparison__image--before {
     z-index: 2;
     left: 16px;
+    clip: rect(0, 338px, auto, auto);
   }
 
   .comparison__image--after {
     z-index: 1;
-    right: 0;
+    right: 2px;
+    clip: rect(0, auto, auto, 338px);
+  }
+
+  .comparison__controls {
+    width: 570px;
   }
 
   .comparison__label {
+    padding-bottom: 6px;
     border-bottom: 1px dotted #bebebe;
     font-size: 20px;
   }
 
-  .comparison__toggle {
-    width: 430px;
-    margin-left: 17px;
-    margin-right: 17px;
+  .comparison__label--before {
+    margin-left: 0;
   }
+
+  .comparison__scale {
+    width: 428px;
+    height: 6px;
+    margin-top: -6px;
+    margin-left: 25px;
+    margin-right: 22px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .comparison__bar {
+    margin-left: 46.3%;
+    margin-top: -13px;
+    width: 8px;
+    height: 8px;
+
+    border: 12px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .comparison {
-    margin-top: 250px;
+    margin-top: 137px;
+  }
+
+  .comparison__images {
+    width: 570px;
+  }
+
+  .comparison__image {
+    margin-top: -20px;
   }
 
   .comparison__image--before {
-    margin-top: -250px;
-    width: 690px;
-    height: 499px;
+    left: -20px;
+    clip: rect(0, 305px, auto, auto);
+  }
+
+  .comparison__image--after {
+    z-index: 1;
+    right: 20px;
+    clip: rect(0, auto, auto, 305px);
   }
 }

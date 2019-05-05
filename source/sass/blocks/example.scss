@@ -104,7 +104,10 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    margin-bottom: 0;
+
     background-color: $bg-secondary;
+    background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 60%, #eaeaea 60%, #eaeaea 100%);
     border: none;
   }
 
