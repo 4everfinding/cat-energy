@@ -40,7 +40,6 @@
 
 .form__fieldset--extra {
   padding-top: 5px;
-
 }
 
 .form__fieldset-title {
@@ -151,8 +150,6 @@
 .form__label--phone {
   padding-right: 9px;
 }
-
-
 
 .form__input-radio + .form__label {
   position: relative;
@@ -445,11 +442,6 @@
     margin-bottom: 37px;
   }
 
-  .form__fieldset--extra .form__input-wrapper {
-    width: 280px;
-    margin-bottom: 20px;
-  }
-
   .form__label {
     padding-right: 16px;
     margin-top: -4px;
@@ -487,8 +479,6 @@
 
     font-size: 20px;
     line-height: 20px;
-
-    font: inherit;
 
     &::placeholder {
       font-size: 20px;
