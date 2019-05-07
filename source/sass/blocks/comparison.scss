@@ -4,13 +4,13 @@
 
 
 .comparison__images {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .comparison__image {
   width: 320px;
   height: 240px;
-}
+  }
 
 .comparison__image--after {
   display: none;
@@ -74,10 +74,10 @@
 
   .comparison__image {
     position: absolute;
-    top: -170px;
+    top: -169px;
     display: block;
     width: 690px;
-    height: 517px;
+    height: auto;
   }
 
   .comparison__image--before {
@@ -132,24 +132,30 @@
 @media (min-width: $desktop-width) {
   .comparison {
     margin-top: 137px;
+
+    background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 58.6%, #eaeaea 58.6%, #eaeaea 100%);
   }
 
   .comparison__images {
-    width: 570px;
+    width: 689px;
+    margin-bottom: 10px;
   }
 
   .comparison__image {
-    margin-top: -20px;
+    margin-top: -23px;
   }
 
   .comparison__image--before {
-    left: -20px;
-    clip: rect(0, 305px, auto, auto);
+    left: 39px;
+    clip: rect(0, 365px, auto, auto);
   }
 
   .comparison__image--after {
-    z-index: 1;
-    right: 20px;
-    clip: rect(0, auto, auto, 305px);
+    right: -40px;
+    clip: rect(0, auto, auto, 364px);
+  }
+
+  .comparison__controls {
+    margin-right: 0;
   }
 }

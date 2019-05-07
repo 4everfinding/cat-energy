@@ -7,9 +7,14 @@
   text-align: center;
   color: #ffffff;
 
-  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a 0, #63a73a 305px, #ffffff 305px, #ffffff 480px);
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a 0, #63a73a 63.5%, #ffffff 63.5%, #ffffff 100%);
   background-repeat: no-repeat;
   background-position: center 166px, center top, 0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a73a 0, #63a73a 63.5%, #ffffff 63.5%, #ffffff 100%);
+    background-size: 280px auto, 320px auto, 100% auto;
+  }
 }
 
 .promo__title {
@@ -41,6 +46,11 @@
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 252px;
+    background-size: 708px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+    }
 
     .container {
       width: 427px;
@@ -72,9 +82,14 @@
 
     text-align: left;
     color: $color-secondary;
-    background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 0%, #ffffff 50%, #64a83b 50%, #64a83b 100%);
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 0%, #ffffff 50%, #64a83b 50%, #64a83b 100%);
     background-repeat: no-repeat;
     background-position: right -69px top, 0 0;
+    background-size: 720px auto, auto auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 0%, #ffffff 50%, #64a83b 50%, #64a83b 100%);
+    }
 
     .container {
       box-sizing: border-box;
@@ -87,6 +102,11 @@
       background-image: url("../img/index-can-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: right 218px top 311px;
+      background-size: 552px auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+      }
     }
   }
 

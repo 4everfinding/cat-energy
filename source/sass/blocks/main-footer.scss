@@ -2,18 +2,18 @@
   background-color: $bg-secondary;
 }
 
+.main-footer__map img {
+  display: block;
+  width: 100%;
+  height: 362px;
+}
+
 .main-footer__wrapper {
   padding-top: 39px;
 
   text-align: center;
 
   background-color: $bg-secondary;
-}
-
-.main-footer__map img {
-  display: block;
-  width: 100%;
-  height: 362px;
 }
 
 .main-footer__logo {
@@ -87,7 +87,7 @@
 
   .main-footer__logo {
     margin-bottom: 0;
-    margin-right: 18px;
+    margin-right: 37px;
   }
 
   .main-footer__social {
