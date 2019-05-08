@@ -103,7 +103,7 @@
     width: 25px;
     height: 12px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -111,7 +111,7 @@
   &:hover::after {
     width: 33px;
 
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
@@ -213,7 +213,6 @@
     line-height: 20px;
 
     &::after {
-      // противоречия макета в плане отступа слева от ссылки, надо обсудить
       left: 130px;
       top: 3px;
     }
@@ -301,7 +300,6 @@
   }
 
   .program__more::after {
-    // противоречия макета в плане отступа слева от ссылки, надо обсудить
     left: 130px;
     top: 3px;
   }

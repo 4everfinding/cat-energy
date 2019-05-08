@@ -54,7 +54,7 @@
   }
 
   .product__wrapper {
-    width: 249px;
+    width: 325px;
     flex-direction: column;
     align-items: center;
   }
@@ -63,14 +63,23 @@
     width: 249px;
   }
 
+  .product__column--image {
+    position: relative;
+
+    width: 325px;
+    margin-bottom: 164px;
+  }
+
   .product__image {
-    display: block;
-    width: 195px;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -126px;
+    position: absolute;
+    bottom: -166px;
+
+    width: 324px;
     margin-bottom: 40px;
+  }
+
+  .product__image--buckwheat-small {
+    bottom: -168px;
   }
 
   .product__name {
@@ -107,10 +116,23 @@
   }
 
   .product__wrapper {
-    width: 169px;
+    width: 245px;
   }
 
   .product__column {
     width: 169px;
+  }
+
+  .product__column--image {
+    width: 245px;
+    margin-bottom: 164px;
+  }
+
+  .product__image {
+    position: absolute;
+    bottom: -167px;
+
+    width: 245px;
+    margin-bottom: 40px;
   }
 }
