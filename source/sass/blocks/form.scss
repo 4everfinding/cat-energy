@@ -260,7 +260,10 @@
   padding: 14px 12px 11px 15px;
   border: 1px solid rgba(205, 205, 205, 0.5);
 
-  font: inherit;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
 
   &:hover {
@@ -327,6 +330,7 @@
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
 
   border: 1px solid #e6e6e6;
   text-transform: uppercase;
@@ -474,8 +478,9 @@
   .form__input-text,
   .form__input-email,
   .form__input-tel {
-    padding: 20px 12px 12px 17px;
+    padding: 11px 12px 9px 17px;
     margin-bottom: 4px;
+
 
     font-size: 20px;
     line-height: 20px;

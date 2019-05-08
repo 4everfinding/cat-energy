@@ -105,12 +105,16 @@
     position: relative;
   }
 
+  .main-footer__contacts--inner {
+    padding-top: 0;
+  }
+
   .main-footer__map img {
     height: 400px;
   }
 
   .main-footer__wrapper--inner {
-    padding-top: 22px;
+    padding-top: 45px;
   }
 
   .main-footer__copyright {
