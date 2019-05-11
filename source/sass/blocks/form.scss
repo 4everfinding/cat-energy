@@ -292,7 +292,7 @@
   right: 16px;
   top: 16px;
 
-  path {
+  svg {
     fill: #222222;
   }
 }
@@ -302,7 +302,7 @@
   right: 13px;
   top: 13px;
 
-  path {
+  svg {
     fill: #222222;
   }
 }
@@ -311,11 +311,12 @@
 .form__input-tel {
   padding-right: 40px;
 
-  &:active + svg path {
+  &:active + svg,
+  &:focus + svg {
     fill: #68b738;
   }
 
-  &:invalid + svg path {
+  &:invalid + svg {
     fill: #ff8282;
   }
 }
