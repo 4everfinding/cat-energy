@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy - функциональное питание для котов</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <!-- Pixel Glass -->
     <style>
       html {
@@ -30,12 +29,14 @@
       }
     </style>
     <link href="pixel-glass/styles.css" rel="stylesheet">
-    <!-- <script src="pixel-glass/script.js"></script> -->
+    <script src="pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
     <script src="js/picturefill.min.js"></script>
-    <script src="js/svgxuse.min.js" defer></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo">
@@ -190,7 +191,7 @@
                 <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
                   <span class="visually-hidden">Мы в Вконтакте</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    <use xlink:href="#icon-vk-mobile"></use>
                   </svg>
                 </a>
               </li>
@@ -198,7 +199,7 @@
                 <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank">
                   <span class="visually-hidden">Мы в Инстаграме</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    <use xlink:href="#icon-insta-mobile"></use>
                   </svg>
 
                 </a>
@@ -207,7 +208,7 @@
                 <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" target="_blank">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    <use xlink:href="#icon-fb-mobile"></use>
                   </svg>
                 </a>
               </li>
@@ -218,7 +219,7 @@
             <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="visually-hidden">HTML Academy</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="51">
-                <use xlink:href="img/sprite.svg#icon-ha"></use>
+                <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
