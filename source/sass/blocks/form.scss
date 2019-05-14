@@ -160,6 +160,15 @@
   user-select: none;
 }
 
+.form__input-radio:focus + .form__label {
+  outline: 1px solid #444444;
+}
+
+.form__input-radio:disabled + .form__label {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .form__input-radio + .form__label::before {
   content: "";
 
@@ -181,10 +190,6 @@
 .form__input-radio + .form__label:active {
   border-color: #bababa;
   opacity: 0.3;
-
-  &::before {
-    opacity: 0.3;
-  }
 }
 
 
@@ -211,6 +216,15 @@
   user-select: none;
 }
 
+.form__input-checkbox:focus + .form__label {
+  outline: 1px solid #444444;
+}
+
+.form__input-checkbox:disabled + .form__label {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .form__input-checkbox + .form__label::before {
   content: "";
 
@@ -231,10 +245,6 @@
 .form__input-checkbox + .form__label:active {
   border-color: #bababa;
   opacity: 0.3;
-
-  &::before {
-    opacity: 0.3;
-  }
 }
 
 
@@ -272,10 +282,14 @@
 
   &:focus {
     border-color: #444444;
+    // outline: 2px solid #444444;
+    // outline-offset: -1px;
   }
 
   &:invalid {
-    border-color: #ff8282;
+    // border-color: #ff8282;
+    // outline: 2px solid #ff8282;
+    // outline-offset: -1px;
   }
 
   &::placeholder {

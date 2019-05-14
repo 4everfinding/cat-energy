@@ -32,7 +32,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-  color: #111111;
+  color: $color-secondary;
 
   text-transform: uppercase;
 }
@@ -284,16 +284,5 @@
 
   .main-header__item--inner .main-header__link {
     color: $color-secondary;
-  }
-
-  .main-header__link[href] {
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }

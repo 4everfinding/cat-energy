@@ -50,7 +50,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-secondary;
 }
 
 .comparison__label--before {
@@ -98,8 +98,19 @@
 
   .comparison__label {
     padding-bottom: 6px;
-    border-bottom: 1px dotted #bebebe;
+
     font-size: 20px;
+
+    border-bottom: 1px dotted #bebebe;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   .comparison__label--before {
@@ -118,14 +129,42 @@
   }
 
   .comparison__bar {
+    position: relative;
+
     margin-left: 46.3%;
     margin-top: -13px;
     width: 8px;
     height: 8px;
+    padding: 12px;
 
-    border: 12px solid #ffffff;
+    color: #68b738;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 12px;
+      top: 12px;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      margin-top: -14px;
+      margin-left: 46.2%;
+      border: 2px solid #68b738;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 }
 

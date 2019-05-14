@@ -31,7 +31,7 @@
       }
     </style>
     <link href="pixel-glass/styles.css" rel="stylesheet">
-    <!-- <script src="pixel-glass/script.js"></script> -->
+    <script src="pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -48,6 +48,7 @@
             <img src="img/logo-mobile.svg" width="192" height="39" alt="Логотип Cat energy">
           </picture>
         </a>
+        <!-- Классы  main-header__nav--closed и main-header__nav--opened переключают состояния меню и внешний вид кнопки -->
         <nav class="main-header__nav main-header__nav--closed main-header__nav--nojs">
           <button class="main-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -412,6 +413,7 @@
           </p>
         </div>
         <div class="main-footer__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871608575!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557846609725!5m2!1sru!2sru" width="320" height="362"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -426,9 +428,9 @@
 
       <div class="main-footer__wrapper main-footer__wrapper--inner">
         <div class="container">
-          <div class="main-footer__logo">
+          <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <img src="img/logo-footer.svg" width="129" height="25" alt="Cat Energy">
-          </div>
+          </a>
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
@@ -451,7 +453,7 @@
               <li class="social__item">
                 <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" target="_blank">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20">
                     <use xlink:href="#icon-fb-mobile"></use>
                   </svg>
                 </a>
@@ -459,9 +461,8 @@
             </ul>
           </div>
           <div class="main-footer__copyright">
-            <b class="main-footer__copyright-text">HTML Academy</b>
             <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              <span class="visually-hidden">HTML Academy</span>
+              <b class="main-footer__copyright-text">HTML Academy</b>
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="51">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>
@@ -469,8 +470,7 @@
           </div>
         </div>
       </div>
-
     </footer>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
