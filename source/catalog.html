@@ -7,33 +7,6 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- Pixel Glass -->
-    <style>
-      html {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* Mobile layout by default */
-        background-image: url("img/320-catalog.png" );
-      }
-      /* Tablet */
-      @media ( min-width: 768px ) {
-        html {
-          /* Tablet layout */
-          background-image: url("img/768-catalog.png" );
-        }
-      }
-      /* Desktop */
-      @media ( min-width: 1300px ) {
-        html {
-          /* Desktop layout */
-          background-image: url("img/1300-catalog.png" );
-        }
-      }
-    </style>
-    <link href="pixel-glass/styles.css" rel="stylesheet">
-    <script src="pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
-    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display: none;">
@@ -350,52 +323,54 @@
       </section>
 
       <section class="extra-goods">
-        <h2 class="extra-goods__title">Дополнительные товары</h2>
         <div class="container">
-          <ul class="extra-goods__list">
-            <li class="extra-goods__item">
-              <h3 class="extra-goods__name">Сахарозаменитель</h3>
-              <table class="extra-goods__features">
-                <tr>
-                  <th class="extra-goods__quantity">1 упаковка (100 г)</th>
-                  <td class="extra-goods__price">200 Р.</td>
-                </tr>
-              </table>
-              <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
-            </li>
-            <li class="extra-goods__item">
-              <h3 class="extra-goods__name">Питьевая вода</h3>
-              <table class="extra-goods__features">
-                <tr>
-                  <th class="extra-goods__quantity">5 литров</th>
-                  <td class="extra-goods__price">50 Р.</td>
-                </tr>
-              </table>
-              <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
-            </li>
-            <li class="extra-goods__item">
-              <h3 class="extra-goods__name">Молоко</h3>
-              <table class="extra-goods__features">
-                <tr>
-                  <th class="extra-goods__quantity">1 литр</th>
-                  <td class="extra-goods__price">100 Р.</td>
-                </tr>
-              </table>
-              <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
-            </li>
-            <li class="extra-goods__item">
-              <h3 class="extra-goods__name">Витамины</h3>
-              <table class="extra-goods__features">
-                <tr>
-                  <th class="extra-goods__quantity">1 упаковка (30 г)</th>
-                  <td class="extra-goods__price">300 Р.</td>
-                </tr>
-              </table>
-              <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
-            </li>
-          </ul>
-          <div class="extra-goods__promo container">
-            <p class="extra-goods__promo-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          <h2 class="extra-goods__title">Дополнительные товары</h2>
+          <div class="extra-goods__inner">
+            <ul class="extra-goods__list">
+              <li class="extra-goods__item">
+                <h3 class="extra-goods__name">Сахарозаменитель</h3>
+                <table class="extra-goods__features">
+                  <tr>
+                    <th class="extra-goods__quantity">1 упаковка (100 г)</th>
+                    <td class="extra-goods__price">200 Р.</td>
+                  </tr>
+                </table>
+                <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
+              </li>
+              <li class="extra-goods__item">
+                <h3 class="extra-goods__name">Питьевая вода</h3>
+                <table class="extra-goods__features">
+                  <tr>
+                    <th class="extra-goods__quantity">5 литров</th>
+                    <td class="extra-goods__price">50 Р.</td>
+                  </tr>
+                </table>
+                <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
+              </li>
+              <li class="extra-goods__item">
+                <h3 class="extra-goods__name">Молоко</h3>
+                <table class="extra-goods__features">
+                  <tr>
+                    <th class="extra-goods__quantity">1 литр</th>
+                    <td class="extra-goods__price">100 Р.</td>
+                  </tr>
+                </table>
+                <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
+              </li>
+              <li class="extra-goods__item">
+                <h3 class="extra-goods__name">Витамины</h3>
+                <table class="extra-goods__features">
+                  <tr>
+                    <th class="extra-goods__quantity">1 упаковка (30 г)</th>
+                    <td class="extra-goods__price">300 Р.</td>
+                  </tr>
+                </table>
+                <a class="button button--order-extra extra-goods__button" href="order.html">Заказать</a>
+              </li>
+            </ul>
+            <div class="extra-goods__promo container">
+              <p class="extra-goods__promo-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+            </div>
           </div>
         </div>
       </section>
@@ -472,5 +447,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

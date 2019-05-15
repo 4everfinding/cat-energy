@@ -31,23 +31,67 @@
 }
 
 .form__fieldset--contacts {
+  position: relative;
   padding-bottom: 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 42px;
+    z-index: -1;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #68b738;
+  }
 }
 
 .form__fieldset--comment {
+  position: relative;
   padding-bottom: 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 42px;
+    z-index: -1;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #68b738;
+  }
 }
 
 .form__fieldset--extra {
+  position: relative;
   padding-top: 5px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 38px;
+    z-index: -1;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #68b738;
+  }
 }
 
 .form__fieldset-title {
-  display: flex;
+  display: block;
 
+  padding-right: 11px;
+  padding-left: 20px;
   margin-top: 19px;
+  margin-left: -20px;
   margin-bottom: 34px;
-  margin-left: 20px;
 
   font-family: $font-secondary;
   font-size: 24px;
@@ -55,30 +99,21 @@
   font-weight: 400;
   color: $color-secondary;
 
-  &::after {
-    content: "";
+  background-color: #ffffff;
+}
 
-    flex-shrink: 0;
-    flex-grow: 1;
-
-    width: 10px;
-    height: 3px;
-    margin-top: 14px;
-    margin-left: 15px;
-
-    background-color: #68b738;
-  }
+.form__fieldset-title--contacts {
+  width: 190px;
 }
 
 .form__fieldset-title--comment {
+  width: 120px;
+  padding-right: 22px;
   margin-bottom: 35px;
-
-  &::after {
-    margin-left: 22px;
-  }
 }
 
 .form__fieldset-title--extra {
+  width: 153px;
   margin-bottom: 41px;
 
   &::after {
@@ -177,13 +212,11 @@
   &:focus {
     border-color: transparent;
     outline: 2px solid #444444;
-    // outline-offset: -1px;
   }
 
   &:focus:invalid {
     border-color: transparent;
     outline: 2px solid #ff8282;
-    // outline-offset: -1px;
   }
 
   &::placeholder {
@@ -354,6 +387,15 @@
 
   border: 1px solid #e6e6e6;
   text-transform: uppercase;
+
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid #444444;
+  }
 }
 
 .form__button {
@@ -387,19 +429,32 @@
     margin-bottom: 22px;
   }
 
+  .form__fieldset--contacts {
+    &::before {
+      top: 50px;
+    }
+  }
+
   .form__fieldset--comment {
     padding-top: 24px;
     margin-bottom: 37px;
+
+    &::before {
+      top: 65px;
+    }
   }
 
   .form__fieldset--extra {
     margin-bottom: 49px;
+
+    &::before {
+      top: 46px;
+    }
   }
 
 
   .form__fieldset .container {
     width: 630px;
-    padding-left: 4px;
   }
 
   .form__fieldset--program-weight .container {
@@ -409,45 +464,27 @@
   }
 
   .form__fieldset-title {
+    padding-left: 39px;
+    padding-right: 40px;
+
+    margin-left: -39px;
     margin-bottom: 76px;
-    margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      content: "";
-
-      flex-shrink: 0;
-
-      width: 30px;
-      height: 3px;
-      margin-right: 39px;
-      margin-top: 22px;
-
-      background-color: #68b738;
-    }
-
-    &::after {
-      content: "";
-
-      flex-shrink: 0;
-      flex-grow: 1;
-
-      width: 10px;
-      height: 3px;
-      margin-left: 42px;
-      margin-top: 22px;
-    }
   }
 
+  .form__fieldset-title--contacts {
+    width: 514px;
+  }
+
+
   .form__fieldset-title--comment {
-    &::after {
-      margin-left: 40px;
-    }
+    width: 180px;
   }
 
   .form__fieldset-title--extra {
+    width: 213px;
     margin-bottom: 67px;
   }
 
@@ -546,7 +583,7 @@
     line-height: 30px;
   }
 
-  .form__fieldset--extra .container {
+  .form__fieldset--extra .form__fieldset-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -576,6 +613,7 @@
   .form__button {
     margin: 0;
     margin-top: 12px;
+    margin-left: 2px;
   }
 
   .form__notes {
@@ -629,19 +667,34 @@
   }
 
   .form__fieldset-title {
-    margin-left: 40px;
     margin-top: 17px;
-
-    &::before {
-      content: none;
-    }
   }
 
   .form__fieldset--contacts {
     padding-top: 5px;
+
+    &::before {
+      top: 44px;
+    }
   }
 
-  .form__fieldset--contacts .container {
+  .form__fieldset--comment {
+    padding-top: 8px;
+
+    &::before {
+      top: 47px;
+    }
+  }
+
+  .form__fieldset--extra {
+    padding-top: 7px;
+
+    &::before {
+      top: 48px;
+    }
+  }
+
+  .form__fieldset--contacts .form__fieldset-inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -685,14 +738,6 @@
 
   .form__fieldset--contacts .form__input-wrapper {
     width: 570px;
-  }
-
-  .form__fieldset--comment {
-    padding-top: 8px;
-  }
-
-  .form__fieldset--extra {
-    padding-top: 7px;
   }
 
   .form__fieldset-title--extra {
