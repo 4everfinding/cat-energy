@@ -117,4 +117,4 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("start", gulp.series("server"));
+gulp.task("start", gulp.series("build", "server"));
