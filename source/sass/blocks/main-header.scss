@@ -5,9 +5,9 @@
 
 .main-header__logo {
   display: block;
-  width: 280px;
+  width: 220px;
   padding-bottom: 9px;
-  margin: 0 auto;
+  margin-left: 20px;
 }
 
 .main-header__logo[href] {
@@ -39,16 +39,19 @@
 
 .main-header__toggle {
   position: absolute;
-  top: -42px;
-  right: 20px;
+  top: -54px;
+  right: 12px;
   z-index: 2;
 
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 18px;
-  padding: 10px;
+  padding: 20px;
 
-  background: none;
+  // background: rgba(200, 0, 0, 0.5);
+  background: transparent;
 
   cursor: pointer;
   border: none;
@@ -58,8 +61,8 @@
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 12px;
+  left: 8px;
 
   width: 24px;
   height: 2px;
@@ -74,8 +77,8 @@
     content: "";
 
     position: absolute;
-    top: 8px;
-    left: 0;
+    top: 20px;
+    left: 8px;
     width: 24px;
     height: 2px;
 
